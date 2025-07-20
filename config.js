@@ -26,12 +26,12 @@ export const initSdk = async (params = { loadToken: false }) => {
 
     if (connection.rpcEndpoint === clusterApiUrl('mainnet-beta')) {
         console.warn(
-            'Вы используете бесплатный RPC-узел, что может вызвать неожиданные ошибки. Рекомендуется использовать платный узел.'
+            'You are using a free RPC node, which may cause unexpected errors. It is recommended to use a paid node.'
         );
     }
 
     console.log(
-        `Подключаемся к RPC ${connection.rpcEndpoint} на кластере ${cluster}`
+        `Connecting to RPC ${connection.rpcEndpoint} on ${cluster} cluster`
     );
 
     raydium = await Raydium.load({

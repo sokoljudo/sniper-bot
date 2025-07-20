@@ -31,10 +31,10 @@ yarn install
 node index.js
 
 # Expected output:
-
+```bash
 [7/20/2025 14:30:45.123] 🔗 Connecting to Solana network...
 [7/20/2025 14:30:46.456] 🚀 Starting liquidity monitoring...
-
+```
 ## 🔒 Security
 
 Safety Checks Performed:
